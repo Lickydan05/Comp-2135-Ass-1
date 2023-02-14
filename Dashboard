@@ -9,7 +9,8 @@
   <body>
     <main>
       <div id="Nav-bar">
-        <div id="Dash"><p>he</p></div>
+        <div id="Dash"><a href="Dashboard">
+          <img src="./images/house.jpg" width="100px" height="100px"></a></div>
         <div id="Profile"><p>tho</p></div>
         <div id="Date"><p>hoe</p></div>
       </div>

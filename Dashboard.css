@@ -22,14 +22,26 @@ input:focus {
 #Profile {
   justify-content: left;
   margin: auto;
+  border-color: black;
+  border-style: solid;
+  padding: 50px;
+  border-radius: 10%;
 }
 
 #Dash {
   justify-content: center;
   margin: auto;
+  border-color: black;
+  border-style: solid;
+  padding: 50px;
+  border-radius: 10%;
 }
 
 #Date {
   justify-content: right;
   margin: auto;
+  border-color: black;
+  border-style: solid;
+  padding: 50px;
+  border-radius: 10%;
 }
