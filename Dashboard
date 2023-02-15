@@ -8,48 +8,72 @@
   </head>
   <body>
     <main>
+
+      <div id="title"><h1>Smart Home Monitoring System</h1></div>
       <div id="Nav-bar">
-        <div id="Dash"><a href="Dashboard">
-          <img src="./images/house.jpg" width="100px" height="100px"></a></div>
-        <div id="Profile"><p>tho</p></div>
-        <div id="Date"><p>hoe</p></div>
+        <div id="Dash">
+          <a href="Dashboard"> 
+            <img src="./images/house.jpg" width="250px" height="250px">
+          </a>
+        </div>
+        <div id="Profile">
+          <a href="Profile">
+            <img src="./images/profile.jpg" width="250px" height="250px">
+          </a>
+        </div>
+        <div id="Date"><p>date</p></div>
       </div>
-    <!--  <form action="index.html">
-        <div>
-          <label>Enter your IP Address:&nbsp;</label
-          ><input type="text" id="ip" />
-        </div>
-        <br />
-        <div>
-          <label>Enable Traffic Shaping:&nbsp;</label
-          ><input type="checkbox" id="First_Name" />
-        </div>
-        <br />
-        <div>
-          <label>Enter your Username:&nbsp;</label><input type="text" id="email_2" />
-        </div>
-        <br />
-        <div>
-          <label>Enter your Password:&nbsp;</label
-          ><input type="password" id="Password" />
-        </div>
-        <br />
-        <div>
-          <label>Select the router you own:&nbsp;</label>
-          <select name="Router" id="router_dropdown">
-            <option value="wired">wired routers</option>
-            <option value="wireless">wireless routers</option>
-            <option value="core">core routers</option>
-            <option value="edge">edge routers</option>
-            <option value="vpn">VPN routers</option>
-          </select>
-          <input type="submit" />
-        </div>
-      </form>
-      <footer;>
-        Check out my newsletter as well!
-        <a href="index.html" target="_blank">Newsletter</a>
-      </footer> -->
+
+      <div>
+        <form onsubmit="return false;">
+
+         <br />
+          <div>
+           <label>Enable Notifications:&nbsp;</label
+            ><input type="checkbox" id="notification" />
+          </div>
+         <br />
+          <div>
+            <label>Control Your Home's Temperature(C):&nbsp;</label>
+            <input type="range" min="20" max="50" id="temp_slider"/>
+            <p>Value: <span id="temp_value"></span></p>
+          </div>
+          <button type="submit">Submit changes:</button>
+        </form>
+      </div>
+                  <!--Move this to a javascript file soon enough-->
+                  <script>
+                    var slider = document.getElementById("temp_slider");
+                    var output = document.getElementById("temp_value");
+                    output.innerHTML = (slider.value/2);
+                    
+                    slider.oninput = function() {
+                      output.innerHTML = this.value/2;
+                    }
+
+             /*       var User = "User"
+
+                    var Usertest = prompt("Enter your Username")
+                    if (User != Usertest) {
+                      alert("Wrong Username, Try again");
+                      location.reload(true);
+                    }
+
+                    var Password = "Pass"
+
+                    var Passtest = prompt("Enter your Password")
+                    if (Password != Passtest) {
+                      alert("Wrong Password, Try again");
+                      location.reload(true);
+                    } */
+
+            
+            
+                    </script>
+
+
+
+
     </main>
   </body>
 </html>
