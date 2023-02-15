@@ -3,9 +3,21 @@ body {
   text-align: center;
 }
 
+/* #shadowy {
+  opacity: 0.5;
+  background-color:#000; 
+  width:100%; 
+  height:100%; 
+  top:0; 
+  left:0; 
+  position:fixed;
+  z-index: 1;
+} (Shadow overlay over entire page to be changed when lighting mode is changed but i'll figure out later )*/
+
 form {
   text-align: center;
   width: 100%;
+  z-index: 10;
 }
 
 input:focus {
@@ -27,6 +39,7 @@ input:focus {
   width: 100%;
   height: 350px;
   background-color: rgb(156, 240, 194);
+  z-index: 10;
 }
 
 #Profile {
