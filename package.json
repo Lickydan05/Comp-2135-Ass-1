@@ -1,0 +1,19 @@
+{
+  "name": "comp-2135-ass-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lickydan05/Comp-2135-Ass-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lickydan05/Comp-2135-Ass-1/issues"
+  },
+  "homepage": "https://github.com/Lickydan05/Comp-2135-Ass-1#readme",
+  "description": ""
+}
