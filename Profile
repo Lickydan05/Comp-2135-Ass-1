@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" , initial-scale="1" />
     <link rel="stylesheet" href="Profile.css">
+    <script src="Profile.js" defer></script>
     <title>Daniel's Dashboard</title>
   </head>
-  <body>
+
+  <body onload="time()">
     <main>
       <div id="title"><h1>Your Profile!</h1></div>
       <div id="Nav-bar">
@@ -21,6 +23,45 @@
           </a>
         </div>
         <div id="Date"><p>date</p></div>
+      </div>
+      <br />
+
+      <div>
+        <form onsubmit="return false;" id="frm1">
+         <br />
+          <div>
+            <label>First Name:&nbsp;</label>
+            <input type="text" id="first_name" value=""/>
+          </div>
+          <br />
+          <div>
+            <label>Last Name:&nbsp;</label>
+            <input type="text" id="last_name" value=""/>
+          </div>
+          <br />
+          <div>
+            <label>Email:&nbsp;</label>
+            <input type="text" id="email" value=""/>
+          </div>
+          <br />
+          <div>
+            <label>Birthday:&nbsp;</label>
+            <input type="date" id="Birthday" value=""/>
+          </div>
+          <br />
+          <div>
+            <label>Password:&nbsp;</label>
+            <input type="password" id="password" value=""/>
+          </div>
+          <br />
+          <div>
+            <label>Confirm Password:&nbsp;</label>
+            <input type="password" id="confirm_password" value=""/>
+          </div>
+          <br />
+          <button type="submit" onclick="submitFunction()">Submit changes:</button>
+          <button type="button" onclick="resetForm()">Reset Form:</button>
+        </form>
       </div>
 
 

@@ -14,6 +14,10 @@ body {
   z-index: 1;
 } (Shadow overlay over entire page to be changed when lighting mode is changed but i'll figure out later )*/
 
+.inputs {
+  font-size: x-large;
+}
+
 form {
   text-align: center;
   width: 100%;

@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" , initial-scale="1" />
     <link rel="stylesheet" href="Dashboard.css">
+    <script src="Dashboard.js" defer></script>
     <title>Daniel's Dashboard</title>
   </head>
-  <body>
+  
+  <body onload="time()">
     <main>
       <div id="title"><h1>Smart Home Monitoring System</h1></div>
       <div id="Nav-bar">
@@ -22,19 +24,19 @@
         </div>
         <div id="Date"><p>date</p></div>
       </div>
-
       <br />
+      
       <div>
         <form onsubmit="return false;" id="frm1">
-          <div><label>Device Name: Your Device Here</label></div>
+          <div class="inputs"><label>Device Name: Your Device Here</label></div>
          <br />
-          <div>
+          <div class="inputs">
            <label>Enable Notifications:&nbsp;</label
-            ><input type="checkbox" id="notification" />
+            ><input type="checkbox" id="notification"/>
           </div>
          <br />
-          <div>
-            <label>Lighting Mode:&nbsp;</label><select name="Lighting" id="lights">
+          <div class="inputs">
+            <label>Lighting Mode:&nbsp;</label><select name="Lighting" id="lights" >
               <option value="Off">Off</option>
               <option value="Away">Away</option>
               <option value="Eco">Eco</option>
@@ -42,71 +44,22 @@
            </select>
           </div>
          <br />
-          <div>
+          <div class="inputs">
             <label>Postal Code:&nbsp;</label>
             <input type="text" id="postal" value=""/>
           </div>
          <br />
-          <div>
-            <label>Control Your Home's Temperature:&nbsp;</label>
-            <input type="range" min="20" max="50" id="temp_slider"/>
-            <p>Value: <span id="temp_value"></span></p>
+          <div class="inputs"> 
+           <label>Control Your Home's Temperature:&nbsp;</label> 
+           <input type="range" min="20" max="50" id="temp_slider"/> 
+           <p>Value: <span id="temp_value"></span></p> 
           </div>
-          <button type="submit" onclick="submitFunction()">Submit changes:</button>
+          <button class="inputs" type="submit" onclick="submitFunction()">Submit changes:</button>
+          <button class="inputs" type="button" onclick="resetForm()">Reset Form:</button>
         </form>
       </div>
       <p id="demo"></p>
-
      <!-- <div id="shadowy"></div> -->
-     
-                  <!--Move this to a javascript file soon enough-->
-                  <script>
-                    var slider = document.getElementById("temp_slider");
-                    var output = document.getElementById("temp_value");
-                    output.innerHTML = (slider.value/2 + "°C");
-                    
-                    slider.oninput = function() {
-                      output.innerHTML = this.value/2 + "°C";
-                    }
-
-                   /* function submitFunction() {
-                     // var postal_code = [A-Z]\d[A-Z]\s\d[A-Z]\d //This shit ain't WORKING FOR SOME REASON!? FIX IT!!
-                      var x = document.getElementById("frm1");
-
-                      if (x != postal_code) {
-                      var text = "";
-                      var i = 2;
-                      text += x.elements[i].value + "<br>";
-                      document.getElementById("demo").innerHTML = text;
-                      } else {
-                      document.getElementById("demo").innerHTML = "PLEB";
-                      }
-                    } */
-
-
-             /*       var User = "User"
-
-                    var Usertest = prompt("Enter your Username")
-                    if (User != Usertest) {
-                      alert("Wrong Username, Try again");
-                      location.reload(true);
-                    }
-
-                    var Password = "Pass"
-
-                    var Passtest = prompt("Enter your Password")
-                    if (Password != Passtest) {
-                      alert("Wrong Password, Try again");
-                      location.reload(true);
-                    } */
-
-            
-            
-                    </script>
-
-
-
-
     </main>
   </body>
 </html>
