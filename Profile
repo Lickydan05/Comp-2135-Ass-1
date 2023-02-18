@@ -26,46 +26,48 @@
       </div>
       <br />
 
-      <div>
+      <div class="Form_css">
         <form onsubmit="return false;" id="frm1">
          <br />
-          <div>
+          <div class="inputs">
             <label>First Name:&nbsp;</label>
-            <input type="text" id="first_name" value=""/>
+            <input type="text" id="first_name" value="" class="inputs"/>
           </div>
           <br />
-          <div>
+          <div class="inputs">
             <label>Last Name:&nbsp;</label>
-            <input type="text" id="last_name" value=""/>
+            <input type="text" id="last_name" value="" class="inputs"/>
           </div>
           <br />
-          <div>
+          <div class="inputs">
             <label>Email:&nbsp;</label>
-            <input type="text" id="email" value=""/>
+            <input type="text" id="email" value="" class="inputs"/>
+            <p id="demo1"></p>
           </div>
           <br />
-          <div>
+          <div class="inputs">
             <label>Birthday:&nbsp;</label>
-            <input type="date" id="Birthday" value=""/>
+            <input type="date" id="Birthday" value="" class="inputs"/>
           </div>
           <br />
-          <div>
+          <div class="inputs">
             <label>Password:&nbsp;</label>
-            <input type="password" id="password" value=""/>
+            <input type="password" id="password" value="" class="inputs"/>
           </div>
           <br />
-          <div>
+          <div class="inputs">
             <label>Confirm Password:&nbsp;</label>
-            <input type="password" id="confirm_password" value=""/>
+            <input type="password" id="confirm_password" value="" class="inputs"/>
+            <p id="demo2"></p>
           </div>
           <br />
-          <button type="submit" onclick="submitFunction()">Submit changes:</button>
-          <button type="button" onclick="resetForm()">Reset Form:</button>
+          <button class="inputs" type="submit" onclick="submitFunction()">Submit changes:</button>
+          <button class="inputs" type="button" onclick="resetForm()">Reset Form:</button>
         </form>
       </div>
+      
 
-
-
+      <p id="demo3"></p>
     </main>
   </body>
 </html>

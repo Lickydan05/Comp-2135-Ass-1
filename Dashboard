@@ -26,7 +26,7 @@
       </div>
       <br />
       
-      <div>
+      <div class="Form_css">
         <form onsubmit="return false;" id="frm1">
           <div class="inputs"><label>Device Name: Your Device Here</label></div>
          <br />
@@ -36,7 +36,7 @@
           </div>
          <br />
           <div class="inputs">
-            <label>Lighting Mode:&nbsp;</label><select name="Lighting" id="lights" >
+            <label>Lighting Mode:&nbsp;</label><select class="inputs" name="Lighting" id="lights" >
               <option value="Off">Off</option>
               <option value="Away">Away</option>
               <option value="Eco">Eco</option>
@@ -46,7 +46,7 @@
          <br />
           <div class="inputs">
             <label>Postal Code:&nbsp;</label>
-            <input type="text" id="postal" value=""/>
+            <input class="inputs" type="text" id="postal" value=""/>
           </div>
          <br />
           <div class="inputs"> 
@@ -57,8 +57,8 @@
           <button class="inputs" type="submit" onclick="submitFunction()">Submit changes:</button>
           <button class="inputs" type="button" onclick="resetForm()">Reset Form:</button>
         </form>
+        <p id="demo"></p>
       </div>
-      <p id="demo"></p>
      <!-- <div id="shadowy"></div> -->
     </main>
   </body>

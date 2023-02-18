@@ -28,6 +28,11 @@ input:focus {
   background-color: lightblue;
 }
 
+.Form_css {
+  border-style: solid;
+  padding: 10px;
+}
+
 #title {
   display: flex;
   justify-content: center;
@@ -69,8 +74,15 @@ input:focus {
   border-style: solid;
   padding: 50px;
   border-radius: 10%;
+  background-color: aliceblue;
+  width: 150px;
+  height: 150px;
 }
 
 img {
   border-radius: 10%;
+}
+
+#demo {
+  font-size: x-large;
 }

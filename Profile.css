@@ -1,13 +1,27 @@
 body {
-    background-color: white;
+    background-color: grey;
     text-align: center;
   }
   
+  .inputs {
+    font-size: x-large;
+  }
+
   form {
     text-align: center;
     width: 100%;
   }
-  
+ 
+  .Form_css {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    border-style: solid;
+    padding: 10px;
+    background-color: rgb(192, 186, 186);
+
+  }  
+
   input:focus {
     background-color: lightblue;
   }
@@ -55,6 +69,9 @@ body {
     border-style: solid;
     padding: 50px;
     border-radius: 10%;
+    background-color: rgb(159, 162, 165);
+    width: 150px;
+    height: 150px;
   }
   
   img {
